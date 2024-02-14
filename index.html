@@ -14,16 +14,46 @@
   </head>
   <body>
 
-    <nav class="navbar">
+    <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
           <span class="fw-bold text-secondary">
             Net Ninja Pro - the Book
           </span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"></button>
+        <!-- Toggle button for mobile nav -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav"
+        aria-expended="false" aria-label="Toggle navigation">
+          <span class="navbar-toggle-icon"></span>
+        </button>
+
+
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+              <a href="#topics" class="nav-link">About the Book</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#contact" class="nav-link">Get in Touch</a>
+            </li>
+            <li class="navbar-item d-md-none">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="navbar-item ms-2 d-none d-md-inline">
+              <a href="#pricing" class="btn btn-secondary">Buy Now</a>
+            </li>
+
+        </ul>
       </div>
+      </div>
+
     </nav>
+
+
     <section class="intro">
       <div class="container-lg">
         <div class="row justify-content-center align-items-center">
